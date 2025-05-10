@@ -1,0 +1,84 @@
+[gd_scene load_steps=4 format=3 uid="uid://dphsk4kcv17fp"]
+
+[ext_resource type="Script" uid="uid://bd8616sxcdxpg" path="res://scripts/gameover.gd" id="1_ncp31"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dy3ie"]
+content_margin_left = 64.0
+content_margin_top = 5.0
+content_margin_right = 64.0
+content_margin_bottom = 5.0
+bg_color = Color(0.129932, 0.597375, 0.36165, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_color = Color(0, 0, 0, 0.882353)
+shadow_offset = Vector2(1.645, 0.47)
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2mkfd"]
+content_margin_left = 64.0
+content_margin_top = 5.0
+content_margin_right = 64.0
+content_margin_bottom = 5.0
+bg_color = Color(0.623529, 0.145098, 0.211765, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[node name="gameover" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ncp31")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+clip_contents = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.62
+anchor_right = 0.5
+anchor_bottom = 0.62
+offset_left = -394.0
+offset_top = -121.76
+offset_right = -131.0
+offset_bottom = -40.76
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3, 3)
+theme_override_constants/separation = 15
+alignment = 1
+
+[node name="MenuButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_dy3ie")
+text = "Zur Levelauswahl"
+
+[node name="MenuButton2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_2mkfd")
+text = "Spiel Beenden"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -234.0
+offset_top = 40.0
+offset_right = 234.0
+offset_bottom = 195.816
+grow_horizontal = 2
+theme_override_font_sizes/normal_font_size = 70
+text = "Game Over"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/MenuButton" to="." method="_on_menu_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/MenuButton2" to="." method="_on_menu_button_2_pressed"]

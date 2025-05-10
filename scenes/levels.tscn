@@ -1,0 +1,164 @@
+[gd_scene load_steps=3 format=3 uid="uid://buiaebwlph6xk"]
+
+[ext_resource type="Script" uid="uid://c4jxt4i1rlrdu" path="res://scripts/levels.gd" id="1_hcnff"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ah40r"]
+content_margin_left = 32.0
+content_margin_top = 5.0
+content_margin_right = 32.0
+content_margin_bottom = 5.0
+bg_color = Color(0.419608, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.172549)
+shadow_size = 5
+
+[node name="levels" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hcnff")
+
+[node name="mm" type="Button" parent="."]
+layout_mode = 2
+offset_left = 28.0
+offset_top = 25.0
+offset_right = 343.0
+offset_bottom = 79.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_ah40r")
+text = "Zurück zum Hauptmenü"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -484.0
+offset_top = -52.0
+offset_right = 484.0
+offset_bottom = 52.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 16
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="level1" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_ah40r")
+text = "Level 01"
+
+[node name="level2" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_ah40r")
+text = "Level 02"
+
+[node name="level3" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_ah40r")
+text = "Level 03"
+
+[node name="level4" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_ah40r")
+text = "Level 04
+"
+
+[node name="level5" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_ah40r")
+text = "Level 05
+"
+
+[node name="level6" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_ah40r")
+text = "Level 06
+"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="level7" type="Button" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_ah40r")
+text = "Level 07
+"
+
+[node name="level8" type="Button" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_ah40r")
+text = "Level 08
+"
+
+[node name="level9" type="Button" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_ah40r")
+text = "Level 09
+"
+
+[node name="level10" type="Button" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_ah40r")
+text = "Level 10
+"
+
+[node name="level11" type="Button" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_ah40r")
+text = "Level 11
+"
+
+[node name="level12" type="Button" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_ah40r")
+text = "Level 12
+"
+
+[connection signal="pressed" from="mm" to="." method="_on_mm_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/level1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/level2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/level3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/level4" to="." method="_on_level_4_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/level5" to="." method="_on_level_5_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/level6" to="." method="_on_level_6_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/level7" to="." method="_on_level_7_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/level8" to="." method="_on_level_8_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/level9" to="." method="_on_level_9_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/level10" to="." method="_on_level_10_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/level11" to="." method="_on_level_11_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/level12" to="." method="_on_level_12_pressed"]

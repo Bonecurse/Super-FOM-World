@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://bi54sw1iqw4la"]
+
+[ext_resource type="Script" uid="uid://b1yagp6ttg501" path="res://scripts/prokrasti_schnecke.gd" id="1_ibtbc"]
+[ext_resource type="Texture2D" uid="uid://jfk7qspyp5ow" path="res://assets/sprites/image-removebg-preview.png" id="2_225c4"]
+[ext_resource type="PackedScene" uid="uid://d1vd3gqajv1eb" path="res://scenes/killzone.tscn" id="3_kr521"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c4yyk"]
+atlas = ExtResource("2_225c4")
+region = Rect2(137, 137, 137, 137)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yjtyg"]
+atlas = ExtResource("2_225c4")
+region = Rect2(0, 137, 137, 137)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s534x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c4yyk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yjtyg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ibtbc"]
+size = Vector2(13, 12)
+
+[node name="ProkrastiSchnecke" type="Node2D"]
+position = Vector2(0, -8)
+script = ExtResource("1_ibtbc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 2)
+scale = Vector2(0.133212, 0.133212)
+sprite_frames = SubResource("SpriteFrames_s534x")
+autoplay = "default"
+
+[node name="killzone" parent="." instance=ExtResource("3_kr521")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="killzone"]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_ibtbc")
+
+[node name="RayCast2D_rechts" type="RayCast2D" parent="."]
+target_position = Vector2(9, 0)
+
+[node name="RayCast2D2_links" type="RayCast2D" parent="."]
+target_position = Vector2(-10, 0)

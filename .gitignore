@@ -1,0 +1,5 @@
+*.import
+*.log
+*.tmp
+.export/
+.godot/

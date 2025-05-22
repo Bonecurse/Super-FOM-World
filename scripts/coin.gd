@@ -8,5 +8,5 @@ func _on_body_entered(body):
 	if body.is_in_group("Player"):
 #		game_manager.add_point()
 		queue_free()
-		Score.add_punkte(100)
-		$"../../Player".update_score()
+		%HUD.add_punkte(100)
+		

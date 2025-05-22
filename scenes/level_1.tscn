@@ -1,13 +1,15 @@
 [gd_scene load_steps=19 format=4 uid="uid://dph5myjdrdqg1"]
 
 [ext_resource type="Texture2D" uid="uid://ds5snhtjrpqu5" path="res://assets/sprites/world_tileset.png" id="2_15mv3"]
-[ext_resource type="Script" uid="uid://dqx24jnneo4ul" path="res://scripts/score.gd" id="2_e3sih"]
 [ext_resource type="PackedScene" uid="uid://cg5bmb6gxs2ci" path="res://scenes/success.tscn" id="3_15mv3"]
 [ext_resource type="PackedScene" uid="uid://d1vd3gqajv1eb" path="res://scenes/killzone.tscn" id="3_e3sih"]
 [ext_resource type="PackedScene" uid="uid://csdaepljm2oue" path="res://scenes/player.tscn" id="4_2y5yt"]
 [ext_resource type="PackedScene" uid="uid://dlafupuh6qthw" path="res://scenes/platform.tscn" id="5_2os1m"]
 [ext_resource type="PackedScene" uid="uid://bxby1f1st5s74" path="res://scenes/coin.tscn" id="6_go7sj"]
 [ext_resource type="PackedScene" uid="uid://bi54sw1iqw4la" path="res://scenes/prokrasti_schnecke.tscn" id="8_e3sih"]
+[ext_resource type="PackedScene" uid="uid://dnh23u14in2ik" path="res://hud.tscn" id="9_e3sih"]
+
+[sub_resource type="GDScript" id="GDScript_15mv3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_15mv3")
@@ -180,8 +182,6 @@ sources/0 = SubResource("TileSetAtlasSource_lnu2h")
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_p57ef"]
 distance = -5.0
 
-[sub_resource type="LabelSettings" id="LabelSettings_2y5yt"]
-
 [sub_resource type="Animation" id="Animation_p57ef"]
 length = 0.001
 tracks/0/type = "value"
@@ -263,7 +263,7 @@ _data = {
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
 process_priority = 1
-script = ExtResource("2_e3sih")
+script = SubResource("GDScript_15mv3")
 
 [node name="TilesMap" type="Node" parent="."]
 
@@ -298,16 +298,6 @@ zoom = Vector2(5, 5)
 limit_bottom = 120
 limit_smoothed = true
 position_smoothing_enabled = true
-
-[node name="punkte" type="Label" parent="Player/Camera2D"]
-unique_name_in_owner = true
-offset_left = -110.0
-offset_top = -61.0
-offset_right = -67.0
-offset_bottom = -38.0
-theme_override_font_sizes/font_size = 0
-text = "Punkte: 0"
-label_settings = SubResource("LabelSettings_2y5yt")
 
 [node name="Platforms" type="Node" parent="."]
 
@@ -464,3 +454,6 @@ position = Vector2(255, 57)
 
 [node name="ProkrastiSchnecke2" parent="Enemies" instance=ExtResource("8_e3sih")]
 position = Vector2(1002, -7)
+
+[node name="HUD" parent="." instance=ExtResource("9_e3sih")]
+unique_name_in_owner = true

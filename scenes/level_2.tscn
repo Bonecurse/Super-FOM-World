@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=4 uid="uid://dicrdey2velj0"]
+[gd_scene load_steps=9 format=4 uid="uid://dicrdey2velj0"]
 
 [ext_resource type="Script" uid="uid://dktom04okdbnp" path="res://scripts/game_manager.gd" id="1_ne2mo"]
 [ext_resource type="Texture2D" uid="uid://ds5snhtjrpqu5" path="res://assets/sprites/world_tileset.png" id="2_6cvei"]
 [ext_resource type="PackedScene" uid="uid://cg5bmb6gxs2ci" path="res://scenes/success.tscn" id="3_que50"]
 [ext_resource type="PackedScene" uid="uid://csdaepljm2oue" path="res://scenes/player.tscn" id="5_172wr"]
+[ext_resource type="PackedScene" uid="uid://dnh23u14in2ik" path="res://hud.tscn" id="5_b4j7a"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_u5sy4"]
 
@@ -222,3 +223,5 @@ position_smoothing_enabled = true
 [node name="Coins" type="Node" parent="."]
 
 [node name="Enemies" type="Node" parent="."]
+
+[node name="HUD" parent="." instance=ExtResource("5_b4j7a")]

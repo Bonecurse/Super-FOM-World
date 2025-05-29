@@ -18,7 +18,6 @@ config/icon="res://icon.svg"
 [autoload]
 
 GameManager="*res://scripts/game_manager.gd"
-Hud="*res://scripts/hud.gd"
 
 [global_group]
 

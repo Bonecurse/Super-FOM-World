@@ -9,7 +9,16 @@ script = ExtResource("1_64ctp")
 [node name="punkteanzeige" type="Label" parent="."]
 unique_name_in_owner = true
 offset_right = 206.0
-offset_bottom = 64.0
+offset_bottom = 22.0
 theme_override_fonts/font = ExtResource("1_37p78")
 theme_override_font_sizes/font_size = 20
 text = "SCORE: 0	"
+
+[node name="lebenanzeige" type="Label" parent="."]
+unique_name_in_owner = true
+offset_top = 22.0
+offset_right = 206.0
+offset_bottom = 44.0
+theme_override_fonts/font = ExtResource("1_37p78")
+theme_override_font_sizes/font_size = 20
+text = "LIVES: 0	"

@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bq18ckp4y036g"]
+
+[ext_resource type="Script" uid="uid://c1jqv6q210kqi" path="res://scenes/exit.gd" id="1_uyw7u"]
+[ext_resource type="Texture2D" uid="uid://cghvnpq6jjtha" path="res://assets/sprites/signExit.png" id="2_l5n14"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c7mer"]
+
+[node name="Exit" type="Area2D"]
+script = ExtResource("1_uyw7u")
+
+[node name="SignExit" type="Sprite2D" parent="."]
+position = Vector2(9, 10)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_l5n14")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(9, 9)
+shape = SubResource("RectangleShape2D_c7mer")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

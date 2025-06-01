@@ -181,7 +181,7 @@ physics_layer_0/collision_mask = 2
 sources/0 = SubResource("TileSetAtlasSource_lnu2h")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6cvei"]
-size = Vector2(142, 20)
+size = Vector2(306.8, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ne2mo"]
 size = Vector2(24.4, 15.3333)
@@ -459,7 +459,7 @@ unique_name_in_owner = true
 position = Vector2(144, 208)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killzone"]
-position = Vector2(546, -120)
+position = Vector2(1370, -120)
 scale = Vector2(10, 2)
 shape = SubResource("RectangleShape2D_6cvei")
 

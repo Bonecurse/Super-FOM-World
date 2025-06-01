@@ -459,4 +459,3 @@ position = Vector2(1002, -7)
 
 [node name="HUD" parent="." instance=ExtResource("9_e3sih")]
 unique_name_in_owner = true
-visible = false

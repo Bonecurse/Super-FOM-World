@@ -14,7 +14,7 @@ script = ExtResource("1_j82ki")
 
 [node name="Coinbox" type="Sprite2D" parent="."]
 position = Vector2(8, 24)
-scale = Vector2(0.25, 0.25)
+scale = Vector2(0.22, 0.22)
 texture = ExtResource("2_2odrg")
 
 [node name="SpawnPoint" type="Marker2D" parent="."]

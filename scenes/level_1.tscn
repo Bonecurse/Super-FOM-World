@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dlafupuh6qthw" path="res://scenes/platform.tscn" id="5_2os1m"]
 [ext_resource type="PackedScene" uid="uid://bxby1f1st5s74" path="res://scenes/coin.tscn" id="6_go7sj"]
 [ext_resource type="PackedScene" uid="uid://bi54sw1iqw4la" path="res://scenes/prokrasti_schnecke.tscn" id="8_e3sih"]
-[ext_resource type="PackedScene" uid="uid://dnh23u14in2ik" path="res://hud.tscn" id="9_e3sih"]
+[ext_resource type="PackedScene" uid="uid://dnh23u14in2ik" path="res://scenes/hud.tscn" id="9_e3sih"]
 
 [sub_resource type="GDScript" id="GDScript_15mv3"]
 
@@ -259,7 +259,7 @@ _data = {
 &"move": SubResource("Animation_lnu2h")
 }
 
-[node name="level_1" type="Node2D"]
+[node name="level" type="Node2D"]
 script = ExtResource("1_e3sih")
 
 [node name="GameManager" type="Node" parent="."]

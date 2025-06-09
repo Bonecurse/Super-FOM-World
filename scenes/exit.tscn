@@ -4,17 +4,18 @@
 [ext_resource type="Texture2D" uid="uid://cghvnpq6jjtha" path="res://assets/sprites/signExit.png" id="2_l5n14"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c7mer"]
+size = Vector2(16, 16)
 
 [node name="Exit" type="Area2D"]
 script = ExtResource("1_uyw7u")
 
 [node name="SignExit" type="Sprite2D" parent="."]
-position = Vector2(9, 10)
-scale = Vector2(0.25, 0.25)
+position = Vector2(8.125, 8)
+scale = Vector2(0.225, 0.228571)
 texture = ExtResource("2_l5n14")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(9, 9)
+position = Vector2(8, 8)
 shape = SubResource("RectangleShape2D_c7mer")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

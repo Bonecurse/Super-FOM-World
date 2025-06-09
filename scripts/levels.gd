@@ -15,16 +15,13 @@ func _on_level_3_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/level_3.tscn")
 
 func _on_level_4_pressed() -> void:
-	pass # Replace with function body.
-	#get_tree().change_scene_to_file("res://scenes/level_4.tscn")
+	get_tree().change_scene_to_file("res://scenes/level_4.tscn")
 
 func _on_level_5_pressed() -> void:
-	pass # Replace with function body.
-	#get_tree().change_scene_to_file("res://scenes/level_5.tscn")
+	get_tree().change_scene_to_file("res://scenes/level_5.tscn")
 
 func _on_level_6_pressed() -> void:
-	pass # Replace with function body.
-	#get_tree().change_scene_to_file("res://scenes/level_6.tscn")
+	get_tree().change_scene_to_file("res://scenes/level_6.tscn")
 
 func _on_level_7_pressed() -> void:
 	pass # Replace with function body.

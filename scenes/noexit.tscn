@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dk3tpkpt0vxkx"]
+
+[ext_resource type="Texture2D" uid="uid://wqfw41lu81mv" path="res://assets/sprites/noexit.png" id="1_ekur5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ekur5"]
+
+[node name="Noexit" type="StaticBody2D"]
+
+[node name="Noexit" type="Sprite2D" parent="."]
+position = Vector2(8, 8)
+scale = Vector2(0.0164609, 0.0166667)
+texture = ExtResource("1_ekur5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8, 8)
+shape = SubResource("RectangleShape2D_ekur5")

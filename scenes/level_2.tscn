@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://ds5snhtjrpqu5" path="res://assets/sprites/world_tileset.png" id="2_6cvei"]
 [ext_resource type="PackedScene" uid="uid://cg5bmb6gxs2ci" path="res://scenes/success.tscn" id="3_que50"]
 [ext_resource type="PackedScene" uid="uid://csdaepljm2oue" path="res://scenes/player.tscn" id="5_172wr"]
-[ext_resource type="PackedScene" uid="uid://dnh23u14in2ik" path="res://hud.tscn" id="5_b4j7a"]
+[ext_resource type="PackedScene" uid="uid://dnh23u14in2ik" path="res://scenes/hud.tscn" id="5_b4j7a"]
 [ext_resource type="PackedScene" uid="uid://dqj4y02vtt41b" path="res://scenes/CoinBlock.tscn" id="5_hey2k"]
 [ext_resource type="PackedScene" uid="uid://cg100y6n8df1o" path="res://scenes/FOMcoin.tscn" id="6_y0kc7"]
 [ext_resource type="PackedScene" uid="uid://d1vd3gqajv1eb" path="res://scenes/killzone.tscn" id="8_ne2mo"]
@@ -190,7 +190,7 @@ size = Vector2(24.4, 15.3333)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_que50"]
 size = Vector2(138, 20)
 
-[node name="level_2" type="Node2D"]
+[node name="level" type="Node2D"]
 script = ExtResource("1_wo48x")
 
 [node name="GameManager" type="Node" parent="."]

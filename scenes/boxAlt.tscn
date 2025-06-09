@@ -7,7 +7,7 @@
 size = Vector2(16, 16)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mf2nu"]
-size = Vector2(0, 32)
+size = Vector2(11, 32)
 
 [node name="BoxAlt" type="Node2D"]
 script = ExtResource("1_uxhp8")
@@ -25,7 +25,7 @@ shape = SubResource("RectangleShape2D_uxhp8")
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(8, 8)
+position = Vector2(7.5, 8)
 shape = SubResource("RectangleShape2D_mf2nu")
 
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

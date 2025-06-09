@@ -17,3 +17,11 @@ func update_score():
 func update_lives():
 	%lebenanzeige.text = "LIVES: " + str(GameManager.life)
 	
+func _on_ready() -> void:
+	$levelcoins.visible = false 
+ 
+func showcoins():
+	$levelcoins.visible = true 
+
+func update_levelcoins(ist,von):
+	%levelcoins.text = "LEVELCOINS: " + str(ist) + " / " + str(von)

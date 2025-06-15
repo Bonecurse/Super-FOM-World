@@ -38,5 +38,8 @@ func _physics_process(delta: float) -> void:
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
+		
+	if Input.is_action_just_pressed("quit_to_gameover"):
+		get_tree().change_scene_to_file("res://scenes/levels.tscn")
 
 	move_and_slide()

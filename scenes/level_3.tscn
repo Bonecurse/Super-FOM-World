@@ -363,7 +363,6 @@ position = Vector2(2736, 16)
 
 [node name="HUD" parent="." instance=ExtResource("9_e3sih")]
 unique_name_in_owner = true
-visible = false
 
 [node name="CoinBlocks" type="Node" parent="."]
 

@@ -26,10 +26,9 @@ text = "LIVES: 0	"
 [node name="levelcoins" type="Label" parent="."]
 unique_name_in_owner = true
 offset_top = 48.0
-offset_right = 206.0
+offset_right = 219.0
 offset_bottom = 70.0
 theme_override_fonts/font = ExtResource("1_37p78")
 theme_override_font_sizes/font_size = 20
-text = "LEVEL: 0/55	"
 
 [connection signal="ready" from="." to="." method="_on_ready"]

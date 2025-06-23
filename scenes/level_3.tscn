@@ -367,22 +367,22 @@ unique_name_in_owner = true
 [node name="CoinBlocks" type="Node" parent="."]
 
 [node name="CoinBlock5" parent="CoinBlocks" instance=ExtResource("7_hhfj6")]
-position = Vector2(928, -48)
+position = Vector2(928, -32)
 
 [node name="CoinBlock6" parent="CoinBlocks" instance=ExtResource("7_hhfj6")]
-position = Vector2(944, -48)
+position = Vector2(944, -32)
 
 [node name="CoinBlock" parent="CoinBlocks" instance=ExtResource("7_hhfj6")]
-position = Vector2(112, -48)
+position = Vector2(112, -32)
 
 [node name="CoinBlock2" parent="CoinBlocks" instance=ExtResource("7_hhfj6")]
-position = Vector2(96, -48)
+position = Vector2(96, -32)
 
 [node name="CoinBlock3" parent="CoinBlocks" instance=ExtResource("7_hhfj6")]
-position = Vector2(80, -48)
+position = Vector2(80, -32)
 
 [node name="CoinBlock4" parent="CoinBlocks" instance=ExtResource("7_hhfj6")]
-position = Vector2(64, -48)
+position = Vector2(64, -32)
 
 [node name="CoinBlock7" parent="CoinBlocks" instance=ExtResource("7_hhfj6")]
 position = Vector2(1632, -48)

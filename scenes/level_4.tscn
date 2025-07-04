@@ -459,6 +459,9 @@ position = Vector2(2864, 16)
 [node name="BoxAlt49" parent="BoxAlt" instance=ExtResource("9_ha73p")]
 position = Vector2(2864, 32)
 
+[node name="BoxAlt50" parent="BoxAlt" instance=ExtResource("9_ha73p")]
+position = Vector2(2832, -32)
+
 [node name="FoMcoin" parent="." instance=ExtResource("6_wae8j")]
 position = Vector2(2816, -16)
 

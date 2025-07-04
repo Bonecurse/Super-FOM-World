@@ -684,19 +684,16 @@ position = Vector2(2672, 128)
 [node name="FoMcoin60" parent="Coins" instance=ExtResource("6_wae8j")]
 position = Vector2(2688, 128)
 
-[node name="CoinBlock2" parent="Coins" instance=ExtResource("7_hhfj6")]
-position = Vector2(2656, 80)
-
 [node name="HUD" parent="." instance=ExtResource("9_e3sih")]
 unique_name_in_owner = true
 
 [node name="CoinBlocks" type="Node" parent="."]
 
 [node name="CoinBlock" parent="CoinBlocks" instance=ExtResource("7_hhfj6")]
-position = Vector2(352, -32)
+position = Vector2(352, -24)
 
 [node name="CoinBlock2" parent="CoinBlocks" instance=ExtResource("7_hhfj6")]
-position = Vector2(1616, -80)
+position = Vector2(1600, 64)
 
 [node name="CoinBlock3" parent="CoinBlocks" instance=ExtResource("7_hhfj6")]
 position = Vector2(1632, -80)
@@ -709,6 +706,9 @@ position = Vector2(1664, -80)
 
 [node name="CoinBlock6" parent="CoinBlocks" instance=ExtResource("7_hhfj6")]
 position = Vector2(2160, -80)
+
+[node name="CoinBlock7" parent="CoinBlocks" instance=ExtResource("7_hhfj6")]
+position = Vector2(2656, 96)
 
 [node name="BoxAlt3" type="Node" parent="."]
 

@@ -12,6 +12,7 @@ func hit_from_below():
 	used = true
 	spawn_coin()
 	sprite.texture = preload("res://assets/sprites/usedblock.png")  # falls du eine "leere" Version hast
+	$AudioStreamPlayer2D.play()
 	# Optional: Animation abspielen, wenn vorhanden
 	if has_node("AnimationPlayer"):
 		$AnimationPlayer.play("used")

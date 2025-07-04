@@ -19,22 +19,32 @@ func _ready():
 
 func _on_door_body_entered(body: Node2D) -> void:
 	if body.name == "Player":
+		body.hide()
+		$Teleportsound.play()
+		await $Teleportsound.finished
 		var ziel = $Teleport/TeleportZiel.position
 		body.position = ziel
+		body.show()
 
 
 func _on_door_2_body_entered(body: Node2D) -> void:
 	if body.name == "Player":
+		body.hide()
+		$Teleportsound.play()
+		await $Teleportsound.finished
 		var ziel = $Teleport/TeleportZiel2.position
 		body.position = ziel
+		body.show()
 
 func _on_area_2d_body_entered(body: Node2D) -> void:  # Aufzug
 	if body.name == "Player":
+		$Fahrstuhlmusik.play()
 		$Platforms/Aufzug/AnimationPlayer.play("up")
 
 
 func _on_area_2d_body_exited(body: Node2D) -> void:
 	if body.name == "Player":
+		$Fahrstuhlmusik.stop()
 		var aufzug = $Platforms/Aufzug
 		var anim_player = aufzug.get_node("AnimationPlayer")
 		var anim = anim_player.get_animation("down")
@@ -47,11 +57,14 @@ func _on_area_2d_body_exited(body: Node2D) -> void:
 
 func _on_area_aufzug_2_body_entered(body: Node2D) -> void:
 	if body.name == "Player":
+		$Fahrstuhlmusik.play()
 		$Platforms/Aufzug2/AnimationPlayer.play("up")
 
 
 func _on_area_aufzug_2_body_exited(body: Node2D) -> void:
 	if body.name == "Player":
+		$Fahrstuhlmusik.stop()
+		$Platforms/Aufzug2/AudioStreamPlayer2D.stop()
 		var aufzug = $Platforms/Aufzug2
 		var anim_player = aufzug.get_node("AnimationPlayer")
 		var anim = anim_player.get_animation("down")

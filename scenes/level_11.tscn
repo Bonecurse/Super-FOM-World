@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://yp5budug84f5"]
+[gd_scene load_steps=14 format=4 uid="uid://yp5budug84f5"]
 
 [ext_resource type="Script" uid="uid://yikuwwaonyii" path="res://scripts/level_6.gd" id="1_lsukb"]
 [ext_resource type="Texture2D" uid="uid://ds5snhtjrpqu5" path="res://assets/sprites/world_tileset.png" id="2_nhmbv"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dnh23u14in2ik" path="res://scenes/hud.tscn" id="6_3mfkr"]
 [ext_resource type="PackedScene" uid="uid://cg100y6n8df1o" path="res://scenes/FOMcoin.tscn" id="6_nhmbv"]
 [ext_resource type="PackedScene" uid="uid://dqj4y02vtt41b" path="res://scenes/CoinBlock.tscn" id="7_tuq4b"]
+[ext_resource type="Texture2D" uid="uid://b326lhv74pwa3" path="res://assets/backgrounds/Level 11 Hintergrund.png" id="9_p1tbi"]
 
 [sub_resource type="GDScript" id="GDScript_15mv3"]
 
@@ -225,7 +226,7 @@ position = Vector2(3120, 64)
 position = Vector2(24, 48)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killzone"]
-position = Vector2(1560, 224)
+position = Vector2(1552, 104)
 shape = SubResource("RectangleShape2D_6x5s0")
 
 [node name="Player" parent="." instance=ExtResource("5_3vi8c")]
@@ -401,3 +402,8 @@ position = Vector2(2176, -16)
 position = Vector2(2816, -80)
 
 [node name="boxAlt" type="Node" parent="."]
+
+[node name="Hintergrung" type="Sprite2D" parent="."]
+position = Vector2(1544, -16)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("9_p1tbi")

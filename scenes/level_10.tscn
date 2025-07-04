@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=4 uid="uid://4galia0872yk"]
+[gd_scene load_steps=13 format=4 uid="uid://4galia0872yk"]
 
 [ext_resource type="Script" uid="uid://yikuwwaonyii" path="res://scripts/level_6.gd" id="1_uk14l"]
 [ext_resource type="Texture2D" uid="uid://ds5snhtjrpqu5" path="res://assets/sprites/world_tileset.png" id="2_ng28g"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://csdaepljm2oue" path="res://scenes/player.tscn" id="5_68dkj"]
 [ext_resource type="PackedScene" uid="uid://dnh23u14in2ik" path="res://scenes/hud.tscn" id="6_bg236"]
 [ext_resource type="PackedScene" uid="uid://dqj4y02vtt41b" path="res://scenes/CoinBlock.tscn" id="7_upujw"]
+[ext_resource type="Texture2D" uid="uid://b7mcsiktxikf" path="res://assets/backgrounds/Level 10 Hintergrund.png" id="8_ng28g"]
 
 [sub_resource type="GDScript" id="GDScript_15mv3"]
 
@@ -430,3 +431,8 @@ position = Vector2(2960, -96)
 position = Vector2(2944, -96)
 
 [node name="boxAlt" type="Node" parent="."]
+
+[node name="Hintergrund" type="Sprite2D" parent="."]
+position = Vector2(1552, 32)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("8_ng28g")

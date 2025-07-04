@@ -7,11 +7,13 @@ func _ready():
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.name == "Player":
+		$Fahrstuhlmusik.play()
 		$Platforms/Aufzug/AnimationPlayer.play("up")
 
 
 func _on_area_2d_body_exited(body: Node2D) -> void:
 	if body.name == "Player":
+		$Fahrstuhlmusik.stop()
 		var aufzug = $Platforms/Aufzug
 		var anim_player = aufzug.get_node("AnimationPlayer")
 		var anim = anim_player.get_animation("down")

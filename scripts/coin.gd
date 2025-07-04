@@ -7,6 +7,6 @@ extends Area2D
 func _on_body_entered(body):
 	if body.is_in_group("Player"):
 #		game_manager.add_point()
-		queue_free()
 		%HUD.add_punkte(100)
+		queue_free()
 		

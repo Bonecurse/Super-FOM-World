@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=4 uid="uid://dg5m1dw02d48g"]
+[gd_scene load_steps=16 format=4 uid="uid://dg5m1dw02d48g"]
 
 [ext_resource type="Script" uid="uid://cynhb7paie0p8" path="res://scenes/level_1.gd" id="1_e3sih"]
 [ext_resource type="Texture2D" uid="uid://ds5snhtjrpqu5" path="res://assets/sprites/world_tileset.png" id="2_15mv3"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://dqj4y02vtt41b" path="res://scenes/CoinBlock.tscn" id="7_hhfj6"]
 [ext_resource type="PackedScene" uid="uid://dnh23u14in2ik" path="res://scenes/hud.tscn" id="9_e3sih"]
 [ext_resource type="PackedScene" uid="uid://d1ad1i8jongb2" path="res://scenes/boxAlt.tscn" id="9_ha73p"]
+[ext_resource type="Texture2D" uid="uid://dts1e646toptk" path="res://assets/backgrounds/Level 3 Hintergrund.png" id="10_vcx5n"]
 
 [sub_resource type="GDScript" id="GDScript_15mv3"]
 
@@ -532,3 +533,8 @@ position = Vector2(1568, -240)
 
 [node name="FoMcoin31" parent="." instance=ExtResource("6_wae8j")]
 position = Vector2(1584, -240)
+
+[node name="Hintergrund" type="Sprite2D" parent="."]
+position = Vector2(1532, -112)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("10_vcx5n")

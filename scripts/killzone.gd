@@ -3,6 +3,8 @@ extends Area2D
 
 func _on_body_entered(body: Node2D) -> void:
 	GameManager.life -= 1
+	$AudioStreamPlayer2D.play()
+	await $AudioStreamPlayer2D.finished
 	print("Gestorben. Verbleibende Leben: " +str(GameManager.life))
 	Engine.time_scale = 0.5
 	body.get_node("CollisionShape2D").queue_free()

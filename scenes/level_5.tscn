@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=4 uid="uid://b77fa17rjwikk"]
+[gd_scene load_steps=37 format=4 uid="uid://b77fa17rjwikk"]
 
 [ext_resource type="Script" uid="uid://d2tjyteo2qqbg" path="res://scripts/level_5.gd" id="1_e4ab4"]
 [ext_resource type="Texture2D" uid="uid://ds5snhtjrpqu5" path="res://assets/sprites/world_tileset.png" id="2_15mv3"]
@@ -11,7 +11,9 @@
 [ext_resource type="Texture2D" uid="uid://wtjskxdy136u" path="res://assets/sprites/aufzug.png" id="8_1q3ip"]
 [ext_resource type="PackedScene" uid="uid://dnh23u14in2ik" path="res://scenes/hud.tscn" id="9_e3sih"]
 [ext_resource type="PackedScene" uid="uid://dwhkdcyucum8f" path="res://scenes/door.tscn" id="9_uva14"]
+[ext_resource type="AudioStream" uid="uid://2jng81qir76g" path="res://assets/sounds/fahrstuhl.mp3" id="9_xxvx7"]
 [ext_resource type="PackedScene" uid="uid://dk3tpkpt0vxkx" path="res://scenes/noexit.tscn" id="10_e4ab4"]
+[ext_resource type="AudioStream" uid="uid://1xhgt7i4gd8n" path="res://assets/sounds/teleport.mp3" id="14_68hud"]
 
 [sub_resource type="GDScript" id="GDScript_15mv3"]
 
@@ -728,6 +730,13 @@ position = Vector2(696, -56)
 [node name="TeleportZiel2" type="Marker2D" parent="Teleport"]
 unique_name_in_owner = true
 position = Vector2(1688, -72)
+
+[node name="Fahrstuhlmusik" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_xxvx7")
+volume_db = 16.475
+
+[node name="Teleportsound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_68hud")
 
 [connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="body_entered" from="Platforms/Aufzug/Sprite2D/Area2D" to="." method="_on_area_2d_body_entered"]

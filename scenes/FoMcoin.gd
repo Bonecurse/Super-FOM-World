@@ -6,6 +6,10 @@ func _on_body_entered(body):
 		var scene = get_tree().current_scene
 		if scene.has_method("lev_coin"):
 			scene.call("lev_coin")
+		$FomCoin64x64.hide()
+		$AudioStreamPlayer2D.play()
+		await $AudioStreamPlayer2D.finished
+			
 		queue_free()
 		hud.add_punkte(100)
 		

@@ -1,7 +1,8 @@
-[gd_scene load_steps=26 format=3 uid="uid://csdaepljm2oue"]
+[gd_scene load_steps=27 format=3 uid="uid://csdaepljm2oue"]
 
 [ext_resource type="Texture2D" uid="uid://bqjgty5ua37wv" path="res://assets/sprites/knight.png" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://cf8o1klkg6q4r" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="AudioStream" uid="uid://dldemvlsid7py" path="res://assets/sounds/jump.wav" id="3_qhqgy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g2els"]
 atlas = ExtResource("1_3vyb7")
@@ -187,3 +188,6 @@ frame_progress = 0.0811663
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -5)
 shape = SubResource("CircleShape2D_fjrip")
+
+[node name="jumpsound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_qhqgy")

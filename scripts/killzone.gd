@@ -2,6 +2,8 @@ extends Area2D
 @onready var timer: Timer = $Timer
 
 func _on_body_entered(body: Node2D) -> void:
+	if body.is_in_group("Player"):
+		body.die()
 	GameManager.life -= 1
 	$AudioStreamPlayer2D.play()
 	await $AudioStreamPlayer2D.finished

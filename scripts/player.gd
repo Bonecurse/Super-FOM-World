@@ -3,11 +3,19 @@ extends CharacterBody2D
 const SPEED = 100.0
 const JUMP_VELOCITY = -250.0
 const LANDING_SOUND_THRESHOLD = 250.0  # Mindest-Fallgeschwindigkeit für Sound
+var dead = false 
 
 var cheat = false
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 var was_on_floor = false  # Für Landungsgeräusch
 var max_fall_speed = 0.0  # Höchste Fallgeschwindigkeit merken
+
+func die() -> void:
+	if dead:
+		return 
+	dead = true 
+	animated_sprite.play("death")
+	
 
 func _physics_process(delta: float) -> void:
 	if GameManager.life < 1:
@@ -22,32 +30,33 @@ func _physics_process(delta: float) -> void:
 			max_fall_speed = velocity.y
 
 	# Springen
-	if (Input.is_action_just_pressed("jump") and is_on_floor()) or (Input.is_action_just_pressed("jump") and cheat):
+	if is_visible_in_tree() and not dead and  (Input.is_action_just_pressed("jump") and is_on_floor()) or (Input.is_action_just_pressed("jump") and cheat):
 		$jumpsound.play()
 		velocity.y = JUMP_VELOCITY
 
-	# Eingabe-Richtung holen
-	var direction := Input.get_axis("move_left", "move_right")
-	
-	# Sprite spiegeln
-	if direction > 0:
-		animated_sprite.flip_h = false
-	elif direction < 0:
-		animated_sprite.flip_h = true
+	if is_visible_in_tree() and not dead:
+		# Eingabe-Richtung holen
+		var direction := Input.get_axis("move_left", "move_right")
+		
+		# Sprite spiegeln
+		if direction > 0:
+			animated_sprite.flip_h = false
+		elif direction < 0:
+			animated_sprite.flip_h = true
 
-	# Animationen
-	if direction == 0:
-		animated_sprite.play("idle")
-	else:
-		animated_sprite.play("run")
-	if not is_on_floor():
-		animated_sprite.play("jump")
+		# Animationen
+		if direction == 0:
+			animated_sprite.play("idle")
+		else:
+			animated_sprite.play("run")
+		if not is_on_floor():
+			animated_sprite.play("jump")
 
-	# Bewegung anwenden
-	if direction:
-		velocity.x = direction * SPEED
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
+		# Bewegung anwenden
+		if direction:
+			velocity.x = direction * SPEED
+		else:
+			velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	# Szenewechsel bei Tastendruck
 	if Input.is_action_just_pressed("quit_to_gameover"):

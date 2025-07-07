@@ -10,7 +10,7 @@ func hit_from_below():
 	if used:
 		return
 	used = true
-	spawn_coin()
+	call_deferred("spawn_coin")          # sicherheitshalber ebenfalls deferred
 	$AudioStreamPlayer2D.play()
 	sprite.texture = preload("res://assets/sprites/usedblock.png")  # falls du eine "leere" Version hast
 	# Optional: Animation abspielen, wenn vorhanden
@@ -26,4 +26,5 @@ func spawn_coin():
 	coin.call_deferred("pop_up")
 
 func _on_area_2d_body_exited(body: Node2D) -> void:
-	hit_from_below()
+	if body.is_in_group("Player"):
+		call_deferred("hit_from_below")   # erst NACH der Physikrunde ausführen

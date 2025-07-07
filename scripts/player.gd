@@ -20,7 +20,8 @@ func die() -> void:
 func _physics_process(delta: float) -> void:
 	if GameManager.life < 1:
 		get_tree().change_scene_to_file("res://scenes/gameover.tscn")
-	
+		return
+		
 	# Schwerkraft anwenden
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -61,7 +62,8 @@ func _physics_process(delta: float) -> void:
 	# Szenewechsel bei Tastendruck
 	if Input.is_action_just_pressed("quit_to_gameover"):
 		get_tree().change_scene_to_file("res://scenes/levels.tscn")
-
+		return 
+		
 	# Cheat-Toggle
 	if Input.is_action_just_pressed("cheat_on_off"):
 		cheat = not cheat

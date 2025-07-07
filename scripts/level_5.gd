@@ -64,7 +64,6 @@ func _on_area_aufzug_2_body_entered(body: Node2D) -> void:
 func _on_area_aufzug_2_body_exited(body: Node2D) -> void:
 	if body.name == "Player":
 		$Fahrstuhlmusik.stop()
-		$Platforms/Aufzug2/AudioStreamPlayer2D.stop()
 		var aufzug = $Platforms/Aufzug2
 		var anim_player = aufzug.get_node("AnimationPlayer")
 		var anim = anim_player.get_animation("down")

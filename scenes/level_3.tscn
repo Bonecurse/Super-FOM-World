@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://ds5snhtjrpqu5" path="res://assets/sprites/world_tileset.png" id="2_15mv3"]
 [ext_resource type="PackedScene" uid="uid://d1vd3gqajv1eb" path="res://scenes/killzone.tscn" id="3_e3sih"]
 [ext_resource type="PackedScene" uid="uid://bq18ckp4y036g" path="res://scenes/exit.tscn" id="3_ha73p"]
-[ext_resource type="PackedScene" uid="uid://csdaepljm2oue" path="res://scenes/player.tscn" id="4_2y5yt"]
+[ext_resource type="PackedScene" uid="uid://8d1vspply7id" path="res://scenes/player.tscn" id="4_2y5yt"]
 [ext_resource type="PackedScene" uid="uid://cg100y6n8df1o" path="res://scenes/FOMcoin.tscn" id="6_wae8j"]
 [ext_resource type="PackedScene" uid="uid://dqj4y02vtt41b" path="res://scenes/CoinBlock.tscn" id="7_hhfj6"]
 [ext_resource type="PackedScene" uid="uid://dnh23u14in2ik" path="res://scenes/hud.tscn" id="9_e3sih"]

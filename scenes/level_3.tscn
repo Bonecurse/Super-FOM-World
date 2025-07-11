@@ -4,12 +4,12 @@
 [ext_resource type="Texture2D" uid="uid://ds5snhtjrpqu5" path="res://assets/sprites/world_tileset.png" id="2_15mv3"]
 [ext_resource type="PackedScene" uid="uid://d1vd3gqajv1eb" path="res://scenes/killzone.tscn" id="3_e3sih"]
 [ext_resource type="PackedScene" uid="uid://bq18ckp4y036g" path="res://scenes/exit.tscn" id="3_ha73p"]
-[ext_resource type="PackedScene" uid="uid://8d1vspply7id" path="res://scenes/player.tscn" id="4_2y5yt"]
+[ext_resource type="PackedScene" uid="uid://csdaepljm2oue" path="res://scenes/player.tscn" id="4_2y5yt"]
 [ext_resource type="PackedScene" uid="uid://cg100y6n8df1o" path="res://scenes/FOMcoin.tscn" id="6_wae8j"]
 [ext_resource type="PackedScene" uid="uid://dqj4y02vtt41b" path="res://scenes/CoinBlock.tscn" id="7_hhfj6"]
 [ext_resource type="PackedScene" uid="uid://dnh23u14in2ik" path="res://scenes/hud.tscn" id="9_e3sih"]
 [ext_resource type="PackedScene" uid="uid://d1ad1i8jongb2" path="res://scenes/boxAlt.tscn" id="9_ha73p"]
-[ext_resource type="Texture2D" uid="uid://dts1e646toptk" path="res://assets/backgrounds/Level 3 Hintergrund.png" id="10_vcx5n"]
+[ext_resource type="Texture2D" uid="uid://bulhqi2lm4yn0" path="res://assets/backgrounds/bg_level3.png" id="10_vcx5n"]
 
 [sub_resource type="GDScript" id="GDScript_15mv3"]
 
@@ -534,7 +534,7 @@ position = Vector2(1568, -240)
 [node name="FoMcoin31" parent="." instance=ExtResource("6_wae8j")]
 position = Vector2(1584, -240)
 
-[node name="Hintergrund" type="Sprite2D" parent="."]
-position = Vector2(1532, -112)
-scale = Vector2(0.3, 0.3)
+[node name="BgLevel3" type="Sprite2D" parent="."]
+position = Vector2(1567, -141)
+scale = Vector2(1.64102, 1.64102)
 texture = ExtResource("10_vcx5n")

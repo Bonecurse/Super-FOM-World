@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dnh23u14in2ik" path="res://scenes/hud.tscn" id="6_3mfkr"]
 [ext_resource type="PackedScene" uid="uid://cg100y6n8df1o" path="res://scenes/FOMcoin.tscn" id="6_nhmbv"]
 [ext_resource type="PackedScene" uid="uid://dqj4y02vtt41b" path="res://scenes/CoinBlock.tscn" id="7_tuq4b"]
-[ext_resource type="Texture2D" uid="uid://b326lhv74pwa3" path="res://assets/backgrounds/Level 11 Hintergrund.png" id="9_p1tbi"]
+[ext_resource type="Texture2D" uid="uid://mv42jvkd80f0" path="res://assets/backgrounds/bg_level11.png" id="9_p1tbi"]
 
 [sub_resource type="GDScript" id="GDScript_15mv3"]
 
@@ -403,7 +403,7 @@ position = Vector2(2816, -80)
 
 [node name="boxAlt" type="Node" parent="."]
 
-[node name="Hintergrung" type="Sprite2D" parent="."]
-position = Vector2(1544, -16)
-scale = Vector2(0.3, 0.3)
+[node name="BgLevel11" type="Sprite2D" parent="."]
+position = Vector2(1543, -21)
+scale = Vector2(1.48228, 1.48228)
 texture = ExtResource("9_p1tbi")

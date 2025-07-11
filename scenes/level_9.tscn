@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=4 uid="uid://cvh5m00m1xld1"]
+[gd_scene load_steps=13 format=4 uid="uid://cvh5m00m1xld1"]
 
 [ext_resource type="Script" uid="uid://yikuwwaonyii" path="res://scripts/level_6.gd" id="1_2q8u2"]
 [ext_resource type="Texture2D" uid="uid://ds5snhtjrpqu5" path="res://assets/sprites/world_tileset.png" id="2_wicpl"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://csdaepljm2oue" path="res://scenes/player.tscn" id="5_pnq0c"]
 [ext_resource type="PackedScene" uid="uid://dnh23u14in2ik" path="res://scenes/hud.tscn" id="6_ltn3h"]
 [ext_resource type="PackedScene" uid="uid://dqj4y02vtt41b" path="res://scenes/CoinBlock.tscn" id="7_htoop"]
+[ext_resource type="Texture2D" uid="uid://ccnpqwpk00mng" path="res://assets/backgrounds/bg_level9.png" id="8_2q8u2"]
 
 [sub_resource type="GDScript" id="GDScript_15mv3"]
 
@@ -356,3 +357,8 @@ position = Vector2(2352, -32)
 position = Vector2(2368, -32)
 
 [node name="boxAlt" type="Node" parent="."]
+
+[node name="BgLevel9" type="Sprite2D" parent="."]
+position = Vector2(1516, 105)
+scale = Vector2(1.53855, 1.53855)
+texture = ExtResource("8_2q8u2")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=4 uid="uid://u87s1u1kgcgd"]
+[gd_scene load_steps=23 format=4 uid="uid://u87s1u1kgcgd"]
 
 [ext_resource type="Script" uid="uid://dbfetlwnksk5l" path="res://scripts/level_12.gd" id="1_uoigy"]
 [ext_resource type="Texture2D" uid="uid://ds5snhtjrpqu5" path="res://assets/sprites/world_tileset.png" id="2_uoigy"]
@@ -6,11 +6,12 @@
 [ext_resource type="PackedScene" uid="uid://d1vd3gqajv1eb" path="res://scenes/killzone.tscn" id="4_og2y3"]
 [ext_resource type="PackedScene" uid="uid://csdaepljm2oue" path="res://scenes/player.tscn" id="5_eqyrq"]
 [ext_resource type="PackedScene" uid="uid://cg100y6n8df1o" path="res://scenes/FOMcoin.tscn" id="6_sltwq"]
-[ext_resource type="Texture2D" uid="uid://wtjskxdy136u" path="res://assets/sprites/aufzug.png" id="6_uoigy"]
+[ext_resource type="Texture2D" uid="uid://d4afswcfd2rwy" path="res://assets/sprites/aufzug.png" id="6_uoigy"]
 [ext_resource type="PackedScene" uid="uid://dnh23u14in2ik" path="res://scenes/hud.tscn" id="7_eqrj4"]
 [ext_resource type="PackedScene" uid="uid://dqj4y02vtt41b" path="res://scenes/CoinBlock.tscn" id="8_nhp8t"]
 [ext_resource type="PackedScene" uid="uid://d1ad1i8jongb2" path="res://scenes/boxAlt.tscn" id="10_kuqij"]
-[ext_resource type="AudioStream" uid="uid://2jng81qir76g" path="res://assets/sounds/fahrstuhl.mp3" id="11_og2y3"]
+[ext_resource type="AudioStream" uid="uid://mtbhiiuac0mv" path="res://assets/sounds/fahrstuhl.mp3" id="11_og2y3"]
+[ext_resource type="Texture2D" uid="uid://cil4iu4sge8hj" path="res://assets/backgrounds/bg_level12.png" id="12_eqyrq"]
 
 [sub_resource type="GDScript" id="GDScript_15mv3"]
 
@@ -873,6 +874,11 @@ position = Vector2(1888, 48)
 
 [node name="Fahrstuhlmusik" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("11_og2y3")
+
+[node name="BgLevel12" type="Sprite2D" parent="."]
+position = Vector2(1541, -49)
+scale = Vector2(1.57058, 1.57058)
+texture = ExtResource("12_eqyrq")
 
 [connection signal="body_entered" from="Platforms/Aufzug/Sprite2D/Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Platforms/Aufzug/Sprite2D/Area2D" to="." method="_on_area_2d_body_exited"]

@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://d1vd3gqajv1eb" path="res://scenes/killzone.tscn" id="8_ne2mo"]
 [ext_resource type="PackedScene" uid="uid://d1ad1i8jongb2" path="res://scenes/boxAlt.tscn" id="9_6cvei"]
 [ext_resource type="PackedScene" uid="uid://bq18ckp4y036g" path="res://scenes/exit.tscn" id="10_que50"]
-[ext_resource type="Texture2D" uid="uid://d36iogpblxlu8" path="res://assets/backgrounds/Mario Level 2 Hintergrund.png" id="11_hey2k"]
+[ext_resource type="Texture2D" uid="uid://ch5m14sityxfe" path="res://assets/backgrounds/bg_level2.png" id="11_hey2k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_6cvei")
@@ -508,7 +508,7 @@ position = Vector2(1864, -192)
 [node name="CoinBlock6" parent="CoinBlocks" instance=ExtResource("5_hey2k")]
 position = Vector2(1880, -192)
 
-[node name="Hintergrund" type="Sprite2D" parent="."]
-position = Vector2(1488, -72)
-scale = Vector2(0.3, 0.3)
+[node name="BgLevel2" type="Sprite2D" parent="."]
+position = Vector2(1523, -95)
+scale = Vector2(1.55357, 1.55357)
 texture = ExtResource("11_hey2k")

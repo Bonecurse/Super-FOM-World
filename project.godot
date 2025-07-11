@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 GameManager="*res://scripts/game_manager.gd"
 
+[dotnet]
+
+project/assembly_name="Platformer"
+
 [global_group]
 
 Player=""
@@ -59,3 +63,7 @@ cheat_on_off={
 
 textures/canvas_textures/default_texture_filter=0
 textures/canvas_textures/default_texture_repeat=1
+
+[user]
+
+volume=-18.0

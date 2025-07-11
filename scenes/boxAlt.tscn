@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://d1ad1i8jongb2"]
 
-[ext_resource type="Texture2D" uid="uid://l5nfu5aaqg7f" path="res://assets/sprites/boxAlt.png" id="1_u74d5"]
+[ext_resource type="Texture2D" uid="uid://b0xxk300iigo8" path="res://assets/sprites/boxAlt.png" id="1_u74d5"]
 [ext_resource type="Script" uid="uid://d24rumuvsgem2" path="res://scripts/BoxAlt.gd" id="1_uxhp8"]
 [ext_resource type="AudioStream" uid="uid://cfmosxijfgi8x" path="res://assets/sounds/explosion.wav" id="3_mf2nu"]
 

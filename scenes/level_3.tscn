@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://dqj4y02vtt41b" path="res://scenes/CoinBlock.tscn" id="7_hhfj6"]
 [ext_resource type="PackedScene" uid="uid://dnh23u14in2ik" path="res://scenes/hud.tscn" id="9_e3sih"]
 [ext_resource type="PackedScene" uid="uid://d1ad1i8jongb2" path="res://scenes/boxAlt.tscn" id="9_ha73p"]
-[ext_resource type="Texture2D" uid="uid://bulhqi2lm4yn0" path="res://assets/backgrounds/bg_level3.png" id="10_vcx5n"]
+[ext_resource type="Texture2D" uid="uid://bdprdflumm4c2" path="res://assets/backgrounds/bg_level3.png" id="10_vcx5n"]
 
 [sub_resource type="GDScript" id="GDScript_15mv3"]
 
@@ -535,6 +535,11 @@ position = Vector2(1568, -240)
 position = Vector2(1584, -240)
 
 [node name="BgLevel3" type="Sprite2D" parent="."]
-position = Vector2(1567, -141)
-scale = Vector2(1.64102, 1.64102)
+position = Vector2(688, -137)
+scale = Vector2(0.871377, 0.871377)
+texture = ExtResource("10_vcx5n")
+
+[node name="BgLevel4" type="Sprite2D" parent="."]
+position = Vector2(2769, -137)
+scale = Vector2(0.871, 0.871)
 texture = ExtResource("10_vcx5n")

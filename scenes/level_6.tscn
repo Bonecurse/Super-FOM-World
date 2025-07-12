@@ -244,7 +244,12 @@ unique_name_in_owner = true
 
 [node name="CoinBlocks" type="Node" parent="."]
 
-[node name="BgLevel6" type="Sprite2D" parent="."]
-position = Vector2(1557, 13)
-scale = Vector2(1.124, 1.124)
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.8, 0.2)
+
+[node name="BgLevel6" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1278, 141)
+scale = Vector2(1.012, 1.012)
 texture = ExtResource("8_fidgd")

@@ -461,6 +461,6 @@ unique_name_in_owner = true
 motion_scale = Vector2(0.8, 0.2)
 
 [node name="BgLevel1" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(417.333, 111)
-scale = Vector2(1.52667, 1.52667)
+position = Vector2(468.999, 95.5002)
+scale = Vector2(1.63, 1.63)
 texture = ExtResource("10_2y5yt")

@@ -472,11 +472,12 @@ position = Vector2(2800, -16)
 [node name="FoMcoin3" parent="." instance=ExtResource("6_wae8j")]
 position = Vector2(2896, -80)
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+[node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
 
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2"]
+motion_scale = Vector2(0.8, 0.2)
 
-[node name="BgLevel4" type="Sprite2D" parent="."]
-position = Vector2(1489, -28.5)
-scale = Vector2(1.5225, 1.5225)
+[node name="BgLevel4" type="Sprite2D" parent="ParallaxBackground2/ParallaxLayer"]
+position = Vector2(1286.5, 106.75)
+scale = Vector2(1.32375, 1.32375)
 texture = ExtResource("10_cp0rv")

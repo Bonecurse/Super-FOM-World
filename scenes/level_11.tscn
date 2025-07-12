@@ -403,7 +403,12 @@ position = Vector2(2816, -80)
 
 [node name="boxAlt" type="Node" parent="."]
 
-[node name="BgLevel11" type="Sprite2D" parent="."]
-position = Vector2(1543, -21)
-scale = Vector2(1.48228, 1.48228)
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.8, 0.35)
+
+[node name="BgLevel11" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1294.98, 147.344)
+scale = Vector2(1.3182, 1.3182)
 texture = ExtResource("9_p1tbi")

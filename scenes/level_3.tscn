@@ -534,12 +534,17 @@ position = Vector2(1568, -240)
 [node name="FoMcoin31" parent="." instance=ExtResource("6_wae8j")]
 position = Vector2(1584, -240)
 
-[node name="BgLevel3" type="Sprite2D" parent="."]
-position = Vector2(688, -137)
-scale = Vector2(0.871377, 0.871377)
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.4, 0.2)
+
+[node name="BgLevel3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(391, 118)
+scale = Vector2(0.736522, 0.736522)
 texture = ExtResource("10_vcx5n")
 
-[node name="BgLevel4" type="Sprite2D" parent="."]
-position = Vector2(2769, -137)
-scale = Vector2(0.871, 0.871)
+[node name="BgLevel4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(2158, 118)
+scale = Vector2(0.737, 0.737)
 texture = ExtResource("10_vcx5n")

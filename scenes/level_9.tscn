@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://csdaepljm2oue" path="res://scenes/player.tscn" id="5_pnq0c"]
 [ext_resource type="PackedScene" uid="uid://dnh23u14in2ik" path="res://scenes/hud.tscn" id="6_ltn3h"]
 [ext_resource type="PackedScene" uid="uid://dqj4y02vtt41b" path="res://scenes/CoinBlock.tscn" id="7_htoop"]
-[ext_resource type="Texture2D" uid="uid://ccnpqwpk00mng" path="res://assets/backgrounds/bg_level9.png" id="8_2q8u2"]
+[ext_resource type="Texture2D" uid="uid://bj18thas0kvfo" path="res://assets/backgrounds/bg_level9.png" id="8_2q8u2"]
 
 [sub_resource type="GDScript" id="GDScript_15mv3"]
 
@@ -358,7 +358,12 @@ position = Vector2(2368, -32)
 
 [node name="boxAlt" type="Node" parent="."]
 
-[node name="BgLevel9" type="Sprite2D" parent="."]
-position = Vector2(1516, 105)
-scale = Vector2(1.53855, 1.53855)
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.8, 0.2)
+
+[node name="BgLevel9" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1278, 165)
+scale = Vector2(1.43283, 1.43283)
 texture = ExtResource("8_2q8u2")

@@ -508,7 +508,12 @@ position = Vector2(1864, -192)
 [node name="CoinBlock6" parent="CoinBlocks" instance=ExtResource("5_hey2k")]
 position = Vector2(1880, -192)
 
-[node name="BgLevel2" type="Sprite2D" parent="."]
-position = Vector2(1523, -95)
-scale = Vector2(1.55357, 1.55357)
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.8, 0.2)
+
+[node name="BgLevel2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1277, 132)
+scale = Vector2(1.38513, 1.38513)
 texture = ExtResource("11_hey2k")

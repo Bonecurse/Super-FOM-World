@@ -739,14 +739,14 @@ volume_db = 16.475
 [node name="Teleportsound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("14_68hud")
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+[node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
 
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2(0.15, 0.5)
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2"]
+motion_scale = Vector2(0.8, 0.6)
 
-[node name="BgLevel5" type="Sprite2D" parent="."]
-position = Vector2(1491, 1)
-scale = Vector2(1.52425, 1.52425)
+[node name="BgLevel5" type="Sprite2D" parent="ParallaxBackground2/ParallaxLayer"]
+position = Vector2(1244, 114)
+scale = Vector2(1.44567, 1.44567)
 texture = ExtResource("15_jwrea")
 
 [connection signal="ready" from="." to="." method="_on_ready"]

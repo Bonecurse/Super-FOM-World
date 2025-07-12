@@ -876,7 +876,7 @@ position = Vector2(1888, 48)
 stream = ExtResource("11_og2y3")
 
 [node name="BgLevel12" type="Sprite2D" parent="."]
-position = Vector2(1541, -49)
+position = Vector2(1522, -51)
 scale = Vector2(1.57058, 1.57058)
 texture = ExtResource("12_eqyrq")
 

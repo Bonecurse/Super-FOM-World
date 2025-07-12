@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED = 400
+const SPEED = 110
 const JUMP_VELOCITY = -250.0
 const LANDING_SOUND_THRESHOLD = 250.0  # Mindest-Fallgeschwindigkeit für Sound
 var dead = false 

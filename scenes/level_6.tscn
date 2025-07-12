@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bq18ckp4y036g" path="res://scenes/exit.tscn" id="3_ha73p"]
 [ext_resource type="PackedScene" uid="uid://csdaepljm2oue" path="res://scenes/player.tscn" id="4_2y5yt"]
 [ext_resource type="PackedScene" uid="uid://dqj4y02vtt41b" path="res://scenes/CoinBlock.tscn" id="7_hhfj6"]
-[ext_resource type="Texture2D" uid="uid://chksxysbfi0hf" path="res://assets/backgrounds/bg_level6.png" id="8_fidgd"]
+[ext_resource type="Texture2D" uid="uid://3335a8elg7g1" path="res://assets/backgrounds/bg_level6.png" id="8_fidgd"]
 [ext_resource type="PackedScene" uid="uid://dnh23u14in2ik" path="res://scenes/hud.tscn" id="9_e3sih"]
 
 [sub_resource type="GDScript" id="GDScript_15mv3"]

@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://d1vd3gqajv1eb" path="res://scenes/killzone.tscn" id="8_ne2mo"]
 [ext_resource type="PackedScene" uid="uid://d1ad1i8jongb2" path="res://scenes/boxAlt.tscn" id="9_6cvei"]
 [ext_resource type="PackedScene" uid="uid://bq18ckp4y036g" path="res://scenes/exit.tscn" id="10_que50"]
-[ext_resource type="Texture2D" uid="uid://ch5m14sityxfe" path="res://assets/backgrounds/bg_level2.png" id="11_hey2k"]
+[ext_resource type="Texture2D" uid="uid://b3p38vyou00dq" path="res://assets/backgrounds/bg_level2.png" id="11_hey2k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_6cvei")

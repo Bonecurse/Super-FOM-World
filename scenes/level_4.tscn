@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://dqj4y02vtt41b" path="res://scenes/CoinBlock.tscn" id="7_hhfj6"]
 [ext_resource type="PackedScene" uid="uid://dnh23u14in2ik" path="res://scenes/hud.tscn" id="9_e3sih"]
 [ext_resource type="PackedScene" uid="uid://d1ad1i8jongb2" path="res://scenes/boxAlt.tscn" id="9_ha73p"]
-[ext_resource type="Texture2D" uid="uid://beeg5cdelsjfi" path="res://assets/backgrounds/bg_level4.png" id="10_cp0rv"]
+[ext_resource type="Texture2D" uid="uid://uu60lsgxasqg" path="res://assets/backgrounds/bg_level4.png" id="10_cp0rv"]
 
 [sub_resource type="GDScript" id="GDScript_15mv3"]
 

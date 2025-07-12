@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dnh23u14in2ik" path="res://scenes/hud.tscn" id="6_3mfkr"]
 [ext_resource type="PackedScene" uid="uid://cg100y6n8df1o" path="res://scenes/FOMcoin.tscn" id="6_nhmbv"]
 [ext_resource type="PackedScene" uid="uid://dqj4y02vtt41b" path="res://scenes/CoinBlock.tscn" id="7_tuq4b"]
-[ext_resource type="Texture2D" uid="uid://mv42jvkd80f0" path="res://assets/backgrounds/bg_level11.png" id="9_p1tbi"]
+[ext_resource type="Texture2D" uid="uid://djig6wc1l6l48" path="res://assets/backgrounds/bg_level11.png" id="9_p1tbi"]
 
 [sub_resource type="GDScript" id="GDScript_15mv3"]
 
